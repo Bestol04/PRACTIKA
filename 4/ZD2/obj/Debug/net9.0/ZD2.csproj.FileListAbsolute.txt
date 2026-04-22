@@ -1,0 +1,15 @@
+D:\Практика C#\4\ZD2\bin\Debug\net9.0\ZD2.exe
+D:\Практика C#\4\ZD2\bin\Debug\net9.0\ZD2.deps.json
+D:\Практика C#\4\ZD2\bin\Debug\net9.0\ZD2.runtimeconfig.json
+D:\Практика C#\4\ZD2\bin\Debug\net9.0\ZD2.dll
+D:\Практика C#\4\ZD2\bin\Debug\net9.0\ZD2.pdb
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ZD2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ZD2.AssemblyInfoInputs.cache
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ZD2.AssemblyInfo.cs
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ZD2.csproj.CoreCompileInputs.cache
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ZD2.sourcelink.json
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ZD2.dll
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\refint\ZD2.dll
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ZD2.pdb
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ZD2.genruntimeconfig.cache
+D:\Практика C#\4\ZD2\obj\Debug\net9.0\ref\ZD2.dll
