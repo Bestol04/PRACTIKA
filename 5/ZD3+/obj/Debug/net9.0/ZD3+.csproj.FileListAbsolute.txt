@@ -1,0 +1,5 @@
+D:\Практика C#\5\ZD3+\obj\Debug\net9.0\ZD3+.GeneratedMSBuildEditorConfig.editorconfig
+D:\Практика C#\5\ZD3+\obj\Debug\net9.0\ZD3+.AssemblyInfoInputs.cache
+D:\Практика C#\5\ZD3+\obj\Debug\net9.0\ZD3+.AssemblyInfo.cs
+D:\Практика C#\5\ZD3+\obj\Debug\net9.0\ZD3+.csproj.CoreCompileInputs.cache
+D:\Практика C#\5\ZD3+\obj\Debug\net9.0\ZD3+.sourcelink.json
