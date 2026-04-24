@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZD4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a438bee4c1cb84ee42ed410dc16941c4a1d0d55d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fdfa0af1d050c24ec79b98f1a033d654c7ec803")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZD4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZD4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

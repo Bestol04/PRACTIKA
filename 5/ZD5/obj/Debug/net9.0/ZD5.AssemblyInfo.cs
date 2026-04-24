@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZD5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6696e4d473e062f29fd803c3798c3fd8f3bc791e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fdfa0af1d050c24ec79b98f1a033d654c7ec803")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZD5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZD5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
