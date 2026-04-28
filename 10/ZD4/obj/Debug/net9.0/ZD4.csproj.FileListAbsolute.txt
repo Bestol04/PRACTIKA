@@ -1,0 +1,15 @@
+D:\Практика C#\10\ZD4\bin\Debug\net9.0\ZD4.exe
+D:\Практика C#\10\ZD4\bin\Debug\net9.0\ZD4.deps.json
+D:\Практика C#\10\ZD4\bin\Debug\net9.0\ZD4.runtimeconfig.json
+D:\Практика C#\10\ZD4\bin\Debug\net9.0\ZD4.dll
+D:\Практика C#\10\ZD4\bin\Debug\net9.0\ZD4.pdb
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ZD4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ZD4.AssemblyInfoInputs.cache
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ZD4.AssemblyInfo.cs
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ZD4.csproj.CoreCompileInputs.cache
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ZD4.sourcelink.json
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ZD4.dll
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\refint\ZD4.dll
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ZD4.pdb
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ZD4.genruntimeconfig.cache
+D:\Практика C#\10\ZD4\obj\Debug\net9.0\ref\ZD4.dll
