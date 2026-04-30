@@ -1,0 +1,71 @@
+﻿<Window x:Class="CarRentalApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Аренда авто"
+        Height="400"
+        Width="700"
+        Background="#F4F4F4">
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <ListBox x:Name="CarListBox"
+                 Grid.Column="0"
+                 Margin="5"
+                 SelectionChanged="CarListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="14"/>
+                        <TextBlock Text="{Binding Status}" FontSize="12">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsRented}" Value="True">
+                                            <Setter Property="Foreground" Value="Red"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding IsRented}" Value="False">
+                                            <Setter Property="Foreground" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Column="1" Margin="20">
+
+            <TextBlock Text="Срок аренды (дни)" FontWeight="Bold"/>
+
+            <Slider x:Name="DaysSlider"
+                    Minimum="1"
+                    Maximum="30"
+                    Value="1"
+                    TickFrequency="1"
+                    IsSnapToTickEnabled="True"
+                    ValueChanged="DaysSlider_ValueChanged"/>
+
+            <TextBlock x:Name="DaysText"
+                       Margin="0,5,0,10"
+                       Text="1 день"/>
+
+            <TextBlock Text="Стоимость:" FontWeight="Bold"/>
+            <TextBlock x:Name="TotalPriceText"
+                       FontSize="16"
+                       Foreground="DarkGreen"
+                       Margin="0,5,0,20"/>
+
+            <Button Content="Арендовать"
+                    Height="35"
+                    Background="#2E86C1"
+                    Foreground="White"
+                    Click="RentButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
