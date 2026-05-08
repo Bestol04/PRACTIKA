@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Car": {
+      "Id": 4,
+      "Brand": "Audi",
+      "Model": "A6",
+      "PricePerDay": 90,
+      "IsAvailable": false,
+      "ImageUrl": "",
+      "FullName": "Audi A6"
+    },
+    "ClientName": "Администратор",
+    "RentalDate": "2026-05-08T15:45:05.8307066+03:00",
+    "ReturnDate": null,
+    "DaysRented": 1,
+    "TotalCost": 90,
+    "Status": 1
+  }
+]

@@ -4,157 +4,132 @@
         xmlns:models="clr-namespace:CarRentalApp.Models"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         Title="Регистрация"
-        Height="550"
-                Width="450"
+        Height="720"
+        Width="460"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize">
+        SizeToContent="Manual"
+        ResizeMode="CanResize">
 
-        <Window.Resources>
-                <ObjectDataProvider x:Key="UserRoles"
-                                    MethodName="GetValues"
-                                    ObjectType="{x:Type sys:Enum}">
-                        <ObjectDataProvider.MethodParameters>
-                                <x:Type TypeName="models:UserRole"/>
-                        </ObjectDataProvider.MethodParameters>
-                </ObjectDataProvider>
+    <Window.Resources>
+        <ObjectDataProvider x:Key="UserRoles"
+                            MethodName="GetValues"
+                            ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="models:UserRole"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
 
-                <Style TargetType="TextBox">
-                        <Setter Property="Padding"
-                                        Value="10"/>
-                        <Setter Property="FontSize"
-                                        Value="14"/>
-                        <Setter Property="Margin"
-                                        Value="0,5"/>
-                </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,4"/>
+        </Style>
 
-                <Style TargetType="PasswordBox">
-                        <Setter Property="Padding"
-                                        Value="10"/>
-                        <Setter Property="FontSize"
-                                        Value="14"/>
-                        <Setter Property="Margin"
-                                        Value="0,5"/>
-                </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,4"/>
+        </Style>
 
-                <Style TargetType="ComboBox">
-                        <Setter Property="Padding"
-                                        Value="10"/>
-                        <Setter Property="FontSize"
-                                        Value="14"/>
-                        <Setter Property="Margin"
-                                        Value="0,5"/>
-                </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,4"/>
+        </Style>
 
-                <Style TargetType="Button">
-                        <Setter Property="Padding"
-                                        Value="15,10"/>
-                        <Setter Property="FontSize"
-                                        Value="14"/>
-                        <Setter Property="Margin"
-                                        Value="0,10,0,5"/>
-                        <Setter Property="Cursor"
-                                        Value="Hand"/>
-                </Style>
-        </Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="14,10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,8,0,4"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
 
-        <Grid Background="#F5F5F5">
-                <Border Background="White"
-                        Margin="40"
-                        Padding="30"
-                        CornerRadius="10">
-                        <Border.Effect>
-                                <DropShadowEffect BlurRadius="15"
-                                                  ShadowDepth="3"
-                                                  Opacity="0.3"/>
-                        </Border.Effect>
+        <Style TargetType="Label">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Margin" Value="0,8,0,0"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+    </Window.Resources>
 
-                        <StackPanel>
-                                <!-- Заголовок -->
-                                <TextBlock Text="Регистрация"
-                                           FontSize="24"
-                                           FontWeight="Bold"
-                                           HorizontalAlignment="Center"
-                                           Margin="0,0,0,30"/>
+    <Grid Background="#F5F5F5">
+        <Border Background="White"
+                Margin="20"
+                CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15"
+                                  ShadowDepth="3"
+                                  Opacity="0.3"/>
+            </Border.Effect>
 
-                                <!-- Полное имя -->
-                                <Label Content="Полное имя:"
-                                                FontWeight="SemiBold"/>
-                                <TextBox Text="{Binding FullName, UpdateSourceTrigger=PropertyChanged}"/>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="24,18">
+                <StackPanel>
+                    <TextBlock Text="Регистрация"
+                               FontSize="22"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,12"/>
 
-                                <!-- Имя пользователя -->
-                                <Label Content="Имя пользователя:"
-                                                FontWeight="SemiBold"
-                                                Margin="0,10,0,0"/>
-                                <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Label Content="Полное имя:" Margin="0,0,0,0"/>
+                    <TextBox Text="{Binding FullName, UpdateSourceTrigger=PropertyChanged}"/>
 
-                                <!-- Пароль -->
-                                <Label Content="Пароль:"
-                                                FontWeight="SemiBold"
-                                                Margin="0,10,0,0"/>
-                                <PasswordBox x:Name="PasswordBox"
-                                                PasswordChanged="PasswordBox_PasswordChanged"/>
+                    <Label Content="Имя пользователя:"/>
+                    <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"/>
 
-                                <!-- Подтверждение пароля -->
-                                <Label Content="Подтвердите пароль:"
-                                                FontWeight="SemiBold"
-                                                Margin="0,10,0,0"/>
-                                <PasswordBox x:Name="ConfirmPasswordBox"
-                                                PasswordChanged="ConfirmPasswordBox_PasswordChanged"/>
+                    <Label Content="Пароль:"/>
+                    <PasswordBox x:Name="PasswordBox"
+                                 PasswordChanged="PasswordBox_PasswordChanged"/>
 
-                                <!-- Роль -->
-                                <Label Content="Роль:"
-                                                FontWeight="SemiBold"
-                                                Margin="0,10,0,0"/>
-                                <ComboBox ItemsSource="{Binding Source={StaticResource UserRoles}}"
-                                          SelectedItem="{Binding SelectedRole}">
-                                        <ComboBox.ItemTemplate>
-                                                <DataTemplate>
-                                                        <TextBlock>
-                                                                <TextBlock.Style>
-                                                                        <Style TargetType="TextBlock">
-                                                                                <Style.Triggers>
-                                                                                        <DataTrigger Binding="{Binding}"
-                                                                                                        Value="Client">
-                                                                                                <Setter Property="Text"
-                                                                                                                Value="👤 Клиент"/>
-                                                                                        </DataTrigger>
-                                                                                        <DataTrigger Binding="{Binding}"
-                                                                                                        Value="Manager">
-                                                                                                <Setter Property="Text"
-                                                                                                                Value="💼 Менеджер"/>
-                                                                                        </DataTrigger>
-                                                                                        <DataTrigger Binding="{Binding}"
-                                                                                                        Value="Admin">
-                                                                                                <Setter Property="Text"
-                                                                                                                Value="⚙️ Администратор"/>
-                                                                                        </DataTrigger>
-                                                                                </Style.Triggers>
-                                                                        </Style>
-                                                                </TextBlock.Style>
-                                                        </TextBlock>
-                                                </DataTemplate>
-                                        </ComboBox.ItemTemplate>
-                                </ComboBox>
+                    <Label Content="Подтвердите пароль:"/>
+                    <PasswordBox x:Name="ConfirmPasswordBox"
+                                 PasswordChanged="ConfirmPasswordBox_PasswordChanged"/>
 
-                                <!-- Статус -->
-                                <TextBlock Text="{Binding StatusMessage}"
-                                           Foreground="Red"
-                                           FontSize="12"
-                                           TextAlignment="Center"
-                                           Margin="0,10"/>
+                    <Label Content="Роль:"/>
+                    <ComboBox ItemsSource="{Binding Source={StaticResource UserRoles}}"
+                              SelectedItem="{Binding SelectedRole}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding}" Value="Client">
+                                                    <Setter Property="Text" Value="Клиент"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding}" Value="Manager">
+                                                    <Setter Property="Text" Value="Менеджер"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding}" Value="Admin">
+                                                    <Setter Property="Text" Value="Администратор"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
 
-                                <!-- Кнопка регистрации -->
-                                <Button Content="Зарегистрироваться"
-                                        Command="{Binding RegisterCommand}"
-                                        Background="#4CAF50"
-                                        Foreground="White"
-                                        FontWeight="Bold"/>
+                    <TextBlock Text="{Binding StatusMessage}"
+                               Foreground="Red"
+                               FontSize="12"
+                               TextAlignment="Center"
+                               TextWrapping="Wrap"
+                               Margin="0,10,0,0"
+                               MinHeight="18"/>
 
-                                <Button Content="Отмена"
-                                        Click="CancelButton_Click"
-                                        Background="#9E9E9E"
-                                        Foreground="White"/>
-                        </StackPanel>
-                </Border>
-        </Grid>
+                    <Button Content="Зарегистрироваться"
+                            Command="{Binding RegisterCommand}"
+                            Background="#4CAF50"
+                            Foreground="White"
+                            FontWeight="Bold"
+                            Margin="0,12,0,4"/>
+
+                    <Button Content="Отмена"
+                            Click="CancelButton_Click"
+                            Background="#9E9E9E"
+                            Foreground="White"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
 </Window>
