@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Практика C#\\6\\ZD4\\ZD4.csproj",
+      "projectUniqueName": "D:\\Практика C#\\7\\ZD4\\ZD4.csproj",
       "projectName": "ZD4",
-      "projectPath": "D:\\Практика C#\\6\\ZD4\\ZD4.csproj",
+      "projectPath": "D:\\Практика C#\\7\\ZD4\\ZD4.csproj",
       "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-      "outputPath": "D:\\Практика C#\\6\\ZD4\\obj\\",
+      "outputPath": "D:\\Практика C#\\7\\ZD4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,40 @@
+﻿@model List<PhotoGallery.Models.Photo>
+
+<h1>Галерея изображений</h1>
+
+@if (TempData["Message"] != null)
+{
+    <div style="color:green;
+        font-weight:bold;">
+        @TempData["Message"]
+    </div>
+}
+
+<br />
+
+<a href="/Image/Add">Добавить изображение</a>
+
+<div style="display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:20px;">
+
+    @foreach (var image in Model)
+    {
+        <div style="border:1px solid gray;
+            padding:10px;">
+
+            <img src="@image.Url" style="width:100%;
+            height:200px;
+            object-fit:cover;" />
+
+            <h3>@image.Title</h3>
+
+            <a href="/Image/Show/@image.Id">
+                Открыть
+            </a>
+
+        </div>
+    }
+
+</div>

@@ -1,0 +1,12 @@
+@model PhotoGallery.Models.Photo
+
+<h1>@Model.Title</h1>
+
+<img src="@Model.Url" style="width:600px;
+border-radius:10px;" />
+
+<p>Дата загрузки: @Model.DateUploaded</p>
+
+<a href="/Gallery">
+    Назад
+</a>
