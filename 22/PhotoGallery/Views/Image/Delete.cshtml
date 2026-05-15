@@ -1,0 +1,19 @@
+@model PhotoGallery.Models.ImageItem
+
+<h1>Удаление</h1>
+
+<h3>Удалить изображение?</h3>
+
+<img src="@Model.Path" style="width:300px;" />
+
+<p>@Model.Title</p>
+
+<form method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit">
+        Удалить
+    </button>
+
+</form>

@@ -1,0 +1,33 @@
+@model PhotoGallery.Models.ImageItem
+
+<h1>Добавить изображение</h1>
+
+<form method="post">
+
+    <div>
+        <label>Название</label>
+        <br />
+
+        <input asp-for="Title" />
+
+        <span asp-validation-for="Title"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label>URL изображения</label>
+        <br />
+
+        <input asp-for="Path" style="width:400px;" />
+
+        <span asp-validation-for="Path"></span>
+    </div>
+
+    <br />
+
+    <button type="submit">
+        Добавить
+    </button>
+
+</form>

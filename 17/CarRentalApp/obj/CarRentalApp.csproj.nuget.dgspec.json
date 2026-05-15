@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Практика C#\\CarRentalApp\\CarRentalApp.csproj": {}
+    "D:\\Практика C#\\17\\CarRentalApp\\CarRentalApp.csproj": {}
   },
   "projects": {
-    "D:\\Практика C#\\CarRentalApp\\CarRentalApp.csproj": {
+    "D:\\Практика C#\\17\\CarRentalApp\\CarRentalApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Практика C#\\CarRentalApp\\CarRentalApp.csproj",
+        "projectUniqueName": "D:\\Практика C#\\17\\CarRentalApp\\CarRentalApp.csproj",
         "projectName": "CarRentalApp",
-        "projectPath": "D:\\Практика C#\\CarRentalApp\\CarRentalApp.csproj",
+        "projectPath": "D:\\Практика C#\\17\\CarRentalApp\\CarRentalApp.csproj",
         "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-        "outputPath": "D:\\Практика C#\\CarRentalApp\\obj\\",
+        "outputPath": "D:\\Практика C#\\17\\CarRentalApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

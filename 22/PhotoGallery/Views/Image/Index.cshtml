@@ -1,0 +1,40 @@
+﻿@model List<PhotoGallery.Models.ImageItem>
+
+<h1>Галерея изображений</h1>
+
+<a href="/Image/Create">
+    Добавить изображение
+</a>
+
+<div style="display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:20px;">
+
+    @foreach (var image in Model)
+    {
+        <div style="border:1px solid gray;
+            padding:10px;">
+
+            <img src="@image.Path" style="width:100%;
+            height:200px;
+            object-fit:cover;" />
+
+            <h3>@image.Title</h3>
+
+            <p>@image.UploadedAt</p>
+
+            <a href="/Image/Edit/@image.Id">
+                Редактировать
+            </a>
+
+            |
+
+            <a href="/Image/Delete/@image.Id">
+                Удалить
+            </a>
+
+        </div>
+    }
+
+</div>

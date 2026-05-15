@@ -16,5 +16,23 @@
     "DaysRented": 1,
     "TotalCost": 90,
     "Status": 1
+  },
+  {
+    "Id": 2,
+    "Car": {
+      "Id": 1,
+      "Brand": "Toyota",
+      "Model": "Camry",
+      "PricePerDay": 50,
+      "IsAvailable": false,
+      "ImageUrl": "",
+      "FullName": "Toyota Camry"
+    },
+    "ClientName": "Администратор",
+    "RentalDate": "2026-05-14T11:40:59.0254922+03:00",
+    "ReturnDate": null,
+    "DaysRented": 1,
+    "TotalCost": 50,
+    "Status": 1
   }
 ]

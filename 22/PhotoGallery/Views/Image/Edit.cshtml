@@ -1,0 +1,26 @@
+@model PhotoGallery.Models.ImageItem
+
+<h1>Редактировать</h1>
+
+<form method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <input type="hidden" asp-for="Path" />
+
+    <input type="hidden" asp-for="UploadedAt" />
+
+    <div>
+        <label>Название</label>
+        <br />
+
+        <input asp-for="Title" />
+    </div>
+
+    <br />
+
+    <button type="submit">
+        Сохранить
+    </button>
+
+</form>
